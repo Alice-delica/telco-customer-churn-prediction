@@ -136,7 +136,7 @@ Proyek machine learning untuk mendeteksi pelanggan telekomunikasi yang berisiko 
 ## Project Overview & Workflow
 - **Data Preprocessing:** Data cleaning, handling of data leakage, and standardization/encoding using `ColumnTransformer`.
 - **Handling Imbalance:** Using a class-based weight balancer (`class_weight='balanced'`).
-- **Modeling:** Comparison baseline model tic Regression) vs model ensemble (Random Forest).
+- **Modeling:** Comparison baseline model Logistic Regression) vs model ensemble (Random Forest).
 
 ```mermaid
 flowchart LR
