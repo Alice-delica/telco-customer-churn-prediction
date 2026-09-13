@@ -133,14 +133,14 @@ Proyek machine learning untuk mendeteksi pelanggan telekomunikasi yang berisiko 
 
 ---
 
-## 1. Project Overview & Workflow
+## Project Overview & Workflow
 - **Data Preprocessing:** Pembersihan data, penanganan data leakage, dan standardisasi/encoding menggunakan `ColumnTransformer`.
 - **Handling Imbalance:** Menggunakan penyeimbang bobot kelas (`class_weight='balanced'`).
 - **Modeling:** Komparasi model baseline (Logistic Regression) vs model ensemble (Random Forest).
 
 ---
 
-## 2. Model Performance Comparison
+## Model Performance Comparison
 
 | Model | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) | ROC-AUC |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -151,7 +151,7 @@ Model Random Forest dipilih sebagai model akhir karena memberikan akurasi (76%) 
 
 ---
 
-## 3. Key Findings & Business Recommendations
+## Key Findings & Business Recommendations
 1. **Tenure Months & Contract:** Masa awal berlangganan (0–10 bulan) dan kontrak bulanan (*Month-to-month*) menyumbang risiko churn tertinggi. Sebaliknya, kontrak jangka panjang (1–2 tahun) memangkas churn secara drastis.
 2. **Biaya Layanan:** Beban tagihan bulanan (`Monthly Charges` dan `Total Charges`) menjadi pemicu penting pelanggan mempertimbangkan pindah provider.
 3. **Action Plan:**
