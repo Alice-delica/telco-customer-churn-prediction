@@ -126,3 +126,34 @@ feat_importances.plot(kind='barh', color='steelblue').invert_yaxis()
 plt.title('Top 10 Feature Importance')
 plt.tight_layout()
 plt.show()
+
+# Telco Customer Churn Prediction & Retention Strategy
+
+Proyek machine learning untuk mendeteksi pelanggan telekomunikasi yang berisiko churn serta merumuskan strategi retensi berbasis data.
+
+---
+
+## 1. Project Overview & Workflow
+- **Data Preprocessing:** Pembersihan data, penanganan data leakage, dan standardisasi/encoding menggunakan `ColumnTransformer`.
+- **Handling Imbalance:** Menggunakan penyeimbang bobot kelas (`class_weight='balanced'`).
+- **Modeling:** Komparasi model baseline (Logistic Regression) vs model ensemble (Random Forest).
+
+---
+
+## 2. Model Performance Comparison
+
+| Model | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Logistic Regression (Baseline)** | 0.74 | 0.51 | **0.78** | 0.62 | 0.8489 |
+| **Random Forest (Ensemble)** | **0.76** | **0.53** | 0.77 | **0.63** | **0.8515** |
+
+Model Random Forest dipilih sebagai model akhir karena memberikan akurasi (76%) dan ROC-AUC (0.8515) yang lebih unggul serta presisi tebakan churn yang lebih baik (53%), dengan trade-off penurunan recall yang sangat minimal (77%).
+
+---
+
+## 3. Key Findings & Business Recommendations
+1. **Tenure Months & Contract:** Masa awal berlangganan (0–10 bulan) dan kontrak bulanan (*Month-to-month*) menyumbang risiko churn tertinggi. Sebaliknya, kontrak jangka panjang (1–2 tahun) memangkas churn secara drastis.
+2. **Biaya Layanan:** Beban tagihan bulanan (`Monthly Charges` dan `Total Charges`) menjadi pemicu penting pelanggan mempertimbangkan pindah provider.
+3. **Action Plan:**
+   - Fokuskan pendampingan retensi (*customer onboarding*) intensif pada 3–6 bulan pertama.
+   - Buat penawaran diskon/insentif bagi pelanggan *month-to-month* agar bersedia beralih ke kontrak minimal 1 tahun.
