@@ -147,7 +147,8 @@ Proyek machine learning untuk mendeteksi pelanggan telekomunikasi yang berisiko 
 | **Logistic Regression (Baseline)** | 0.74 | 0.51 | **0.78** | 0.62 | 0.8489 |
 | **Random Forest (Ensemble)** | **0.76** | **0.53** | 0.77 | **0.63** | **0.8515** |
 
-**The Random Forest model was selected as the final model because it delivered superior accuracy (76%) and ROC-AUC (0.8515), as well as better churn prediction precision (53%), with a very minimal trade-off in recall reduction (77%).**
+The Random Forest model was selected as the final model because it delivered superior accuracy (76%) and ROC-AUC (0.8515), as well as better churn prediction precision (53%), with a very minimal trade-off in recall reduction (77%)
+
 ---
 
 ## Key Findings & Business Recommendations
