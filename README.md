@@ -138,6 +138,21 @@ Proyek machine learning untuk mendeteksi pelanggan telekomunikasi yang berisiko 
 - **Handling Imbalance:** Menggunakan penyeimbang bobot kelas (`class_weight='balanced'`).
 - **Modeling:** Komparasi model baseline (Logistic Regression) vs model ensemble (Random Forest).
 
+```mermaid
+flowchart LR
+    A[Raw Data\n7,043 Records] --> B[Data Cleaning &\nLeakage Audit]
+    B --> C[ColumnTransformer\nPipeline]
+    C --> D[Model Benchmark\nLR vs Random Forest]
+    D --> E[Final Evaluation\nROC-AUC: 0.8515]
+    E --> F[Feature Importance &\nRetention Strategy]
+    
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style C fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style D fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style E fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style F fill:#d1ecf1,stroke:#17a2b8,stroke-width:2px
+```
 ---
 
 ## Model Performance Comparison
